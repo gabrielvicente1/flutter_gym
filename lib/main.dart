@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gym/screens/authentication_screen.dart';
 import 'package:gym/screens/exercise_screen.dart';
 
 void main() {
@@ -11,8 +12,8 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-     home: ExerciseScreen()
+    return const MaterialApp(
+     home: AuthenticationScreen()
     );
   }
 } 

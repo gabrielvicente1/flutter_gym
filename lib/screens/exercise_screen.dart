@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gym/_comum/my_colors.dart';
 import 'package:gym/models/exercise_charge_models.dart';
 import 'package:gym/models/exercise_models.dart';
 import 'package:gym/models/exercise_training_models.dart';
@@ -22,11 +23,11 @@ class ExerciseScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xFF59876D),
+      backgroundColor: MyColors.navyBlue,
       appBar: AppBar(
         title: 
         Text(exerciseModels.training, style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 22),),
-         backgroundColor: Color(0xFF59876D),
+         backgroundColor: MyColors.navyBlue,
         foregroundColor: Colors.white,
         centerTitle: true,
         elevation: 0,
@@ -37,6 +38,8 @@ class ExerciseScreen extends StatelessWidget {
       floatingActionButton: FloatingActionButton(
         onPressed: () => {print("foi clicado")},
         child: const Icon(Icons.add),
+        backgroundColor: MyColors.navyBlue,
+        foregroundColor: Colors.white,
       ),
       body: Container(
         margin: EdgeInsets.all(8.0),
